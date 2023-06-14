@@ -41,7 +41,7 @@ C:\kafka_2.13-3.2.0\bin\windows> .\kafka-topics.bat --bootstrap-server localhost
 ./bin/kafka-topics.sh --list --zookeeper localhost:2181  
 C:\kafka_2.13-3.2.0\bin\windows> .\kafka-topics.bat --list --bootstrap-server localhost:9092  
 
-- Descripción de un topic de kafka
+- Descripción de un topic de kafka  
 C:\kafka_2.13-3.2.0\bin\windows> .\kafka-topics.bat --describe --topic devs4j-topic --bootstrap-server localhost:9092  
 
 - Ejecutar consumidor de consola de Kafka sobre un topic:  
