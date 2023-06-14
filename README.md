@@ -48,8 +48,9 @@ C:\kafka_2.13-3.2.0\bin\windows> .\kafka-topics.bat --describe --topic devs4j-to
 ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic testtopic --group grupo1  
 .\kafka-console-consumer.bat --topic devs4j-topic --bootstrap-server localhost:9092
 
-- Ejecutar productor de consola de Kafka sobre un topic:  
-./bin/kafka-console-producer.sh --broker-list localhost:9092,localhost:9093,localhost:9094 --topic testtopic
+- Ejecutar productor de consola de Kafka sobre un topic / Crear producer:  
+./bin/kafka-console-producer.sh --broker-list localhost:9092,localhost:9093,localhost:9094 --topic testtopic  
+.\kafka-console-producer.bat --topic devs4j-topic --bootstrap-server localhost:9092  
 
 - Describir los grupos de consumidores en Kafka:  
 ./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group grupo1 --describe
