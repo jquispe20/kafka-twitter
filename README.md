@@ -32,8 +32,8 @@ C:\kafka_2.13-3.2.0\bin\windows> .\kafka-server-start.bat ..\..\config\server.pr
 - topic = Nombre del topic a crear
 - partitions = Número de particiones
 - replication-fator = Número de replicasa por broker  
-./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 2 --topic testtopic
-
+./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 2 --topic testtopic  
+C:\kafka_2.13-3.2.0\bin\windows> .\kafka-topics.bat --bootstrap-server localhost:9092 --create --topic devs4j-topic --partitions 3 --replication-factor 1  
 - Visualizar detalles de un topic de Kafka:  
 ./bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic testtopic
 
