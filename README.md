@@ -44,8 +44,9 @@ C:\kafka_2.13-3.2.0\bin\windows> .\kafka-topics.bat --list --bootstrap-server lo
 - Descripción de un topic de kafka  
 C:\kafka_2.13-3.2.0\bin\windows> .\kafka-topics.bat --describe --topic devs4j-topic --bootstrap-server localhost:9092  
 
-- Ejecutar consumidor de consola de Kafka sobre un topic:  
-./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic testtopic --group grupo1
+- Ejecutar consumidor de consola de Kafka sobre un topic / Crear consumer:  
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic testtopic --group grupo1  
+.\kafka-console-consumer.bat --topic devs4j-topic --bootstrap-server localhost:9092
 
 - Ejecutar productor de consola de Kafka sobre un topic:  
 ./bin/kafka-console-producer.sh --broker-list localhost:9092,localhost:9093,localhost:9094 --topic testtopic
