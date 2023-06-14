@@ -23,7 +23,8 @@ Comandos para Apache Kafka
 C:\kafka_2.13-3.2.0\bin\windows> .\zookeeper-server-start.bat ..\..\config\zookeeper.properties
 
 - Ejecutar Broker de Kafka:  
-./bin/kafka-server-start.sh config/server.properties
+./bin/kafka-server-start.sh config/server.properties  
+C:\kafka_2.13-3.2.0\bin\windows> .\kafka-server-start.bat ..\..\config\server.properties
 
 - Crear un topic de Kafka con factor de replicación de 3 y dos particiones:  
 ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 2 --topic testtopic
