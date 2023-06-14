@@ -27,6 +27,11 @@ C:\kafka_2.13-3.2.0\bin\windows> .\zookeeper-server-start.bat ..\..\config\zooke
 C:\kafka_2.13-3.2.0\bin\windows> .\kafka-server-start.bat ..\..\config\server.properties
 
 - Crear un topic de Kafka con factor de replicación de 3 y dos particiones:  
+- Los mensajes se procesan en topics 
+- bootstrap-server = Kafka server
+- topic = Nombre del topic a crear
+- partitions = Número de particiones
+- replication-fator = Número de replicasa por broker
 ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 2 --topic testtopic
 
 - Visualizar detalles de un topic de Kafka:  
