@@ -19,7 +19,9 @@ Para salir del fichero y guardar los cambios bastará con salir del modo escritu
 
 Comandos para Apache Kafka
 - Ejecutar Zookeeper:  
-./bin/zookeeper-server-start.sh config/zookeeper.properties
+./bin/zookeeper-server-start.sh config/zookeeper.properties  
+
+C:\kafka_2.13-3.2.0\bin\windows> .\zookeeper-server-start.bat ..\..\config\zookeeper.properties
 
 - Ejecutar Broker de Kafka:  
 ./bin/kafka-server-start.sh config/server.properties
